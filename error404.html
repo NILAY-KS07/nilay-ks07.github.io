@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Error 404</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0d0d0d;
+    color: #e6e6e6;
+    padding: 20px;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #32CD32; 
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 15px rgba(50, 205, 50, 1);
+    letter-spacing: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #32CD32;
+    width: 0;
+    margin-left:42%;
+    animation: typing 4s steps(40, end) forwards, blink 0.8s infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 20%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.progress-bar {
+    height: 5px;
+    width: 0%;
+    background: #32CD32; 
+    transition: width 0.25s ease-in-out;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(50, 205, 50, 0.3);
+    text-align: left;
+    border-left: 5px solid #32CD32;
+}
+
+#cont {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-in-out;
+    background: #1a1a1a;
+    padding: 15px;
+    box-shadow: 6px 6px 20px rgba(50, 205, 50, 0.7);
+    border-radius: 5px;
+}
+
+#author-note {
+    opacity: 1;
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 25%;
+    border-left: solid #32CD32 3px;
+}
+
+hr {
+    color: #32CD32;
+    width: 80%;
+    height: 3px;
+    margin-left: 10%;
+}
+
+#bold {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    color: #32CD32; 
+}
+
+#msg {
+    border-right: solid #32CD32 3px;
+    opacity: 1;
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 5px;
+    width: 30%;
+    margin-left: 35%;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #32CD32;
+    margin-top: 30px;
+    border-bottom: 2px solid #32CD32;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #111;
+    color: #e6e6e6;
+    font-size: 0.9rem;
+    text-align: center;
+    border-top: 2px solid #32CD32;
+}
+
+footer a {
+    color: #32CD32;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.5rem;
+        white-space: normal;
+        text-align: center;
+        width:auto;
+    }
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+    #author-note, #msg {
+        width: 70%;
+        margin: 10px auto;
+        font-size: 1rem;
+        padding: 12px;
+    }
+    #cont {
+        width: 80%;
+        margin: auto;
+        padding: 15px;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        
+    }
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    #author-note, #msg {
+        width: 85%;
+        font-size: 0.95rem;
+        padding: 10px;
+        text-align: center;
+    }
+    #cont {
+        width: 90%;
+        padding: 12px;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+}</style>
+</head>
+<body>
+<div class="progress-container">
+<div class="progress-bar" id="progress-bar"></div>
+</div>
+<h1>Error 404</h1>
+<br><br><hr><br><br>
+<p id = "author-note"><b>Disclaimer! </b>The following story is just a creative-artwork and is not intended to defame any existing property or people. Names and dates used are fictional and do not represent any real incident. I hope you enjoy the story. Happy Reading!!! </p>
+<br><br><hr><br><br><br>
+<p id="bold">Most Terrible Day Of My Life...</p>
+<br>
+<p id="cont">
+Once upon a time..., Okay leave that joke but seriuosly, one day I was given a project for summer holidays, I was working on that. I was already busy on that project for like last 5-6 days, and that day was also nothing different and special to me. Month of June had just begun and I was surfing web for some content to write in my project on different types of ships; their uses, size, power and all that random stuff, you know! But that day as soon as I opened a page for information, it showed "Error 404: The page you requested for is not found." I was like, whaaat!?!?!?(since I used that page several times before and it never acted this way.) But okay! I decided to head to another page. So I exit that and opened another, and bruh same: "Error 404: The page you requested for is not found." I thought internet is now playing with me! I went to another and boom! Same! I doubted! I search other things and tryna opening other pages, and to my utter surprise, ALL OF THEM, LIKE LITERALLY ALL OF THEM WERE OFF, SHOWING THE SAME, "Error 404: The page you requested for is not found." I thought, is the network disconnected today?!? That was terrifying, I was already alone at home. Mom, Dad were out for marketing. I tried many but all were shutdown until one page occured. A single page was open and actually worked, like a drop of water in hot, barren desert. But that page freaked me out. IT WAS CURSED FOR SOME REASON. It had weird, glitchy elements, eerie noises and unusual photos, like a darkweb page somehow surfaced. I was terrified and closed that, tried other pages but still Error 404, I again moved to that page and saw subtle changes. It was like someone just made it worse. I hit F5 to check whether it reverts to normal, but it went more creepy and disturbing after subtle more changes. I hit F5 again and again and the page was gradually growing more bizzare and disturbing. After 7-8 refreshes, I realised I could'nt handle it getting more worse. But still, with one eye closed and fingers crossed, I began spamming F5 again and again, and it just went too far until suddenly my pc crashed and suddenly shutdown! I screamed with terror. I just sat there looking at that desktop for like 30 minutes in shock. Maybe, I opened portal to another dimension. Maybe a pesky hacker was playing a prank on me. I tried calling my parents and what I listened nearly took my life out of me. "The number you are dialing is currently....*glitching* Error 404, Error 404, Error 404, Error 404..." I hung up. I just sat on my bed, covered myself with blanket. I was blank, I didn't knew what to do. This was something terrifying, I have never experienced it ever before. 3 hours passed by, I heard knocking on door. I went briskly and from peephole I saw my parents. I opened door and felt relieved. I didn't told them a word, but I went to my room back. Somehow, I gathered courage to open my desktop again. Tried some random search on browser and clicked the top search result... It OPENED. I felt relieved, but to reassure, I went to several other pages, they all worked normal. As if nothing happened. Now for real check. I visited that page again which freaked me out earlier. And instead of all those cursed elements, it showed "Error 404: The page you requested for is not found."
+</p>
+<footer>
+  <p> Nilay Kumar Shrivastava Originals | Error 404 | Storytellers<br><a href="https://github.com/NILAY-KS07">Author's Page</a> | <a href="index.html">Home</a></p>
+</footer>
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    const containers = document.querySelectorAll(".container");
+    const progressBar = document.getElementById("progress-bar");
+    const contElements = document.querySelectorAll("#cont");
+    
+       
+    function revealOnScroll() {
+        contElements.forEach(cont => {
+            const rect = cont.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                cont.style.opacity = "1";
+                cont.style.transform = "translateY(0)";
+            }
+        });
+    }
+    
+    function updateProgressBar() {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = (scrollTop / scrollHeight) * 100;
+        progressBar.style.width = progress + "%";
+    }
+    
+    window.addEventListener("scroll", () => {
+        revealOnScroll();
+        updateProgressBar();
+    });
+    
+    revealOnScroll();
+    updateProgressBar();
+});
+</script>
+</body>
+</html>
