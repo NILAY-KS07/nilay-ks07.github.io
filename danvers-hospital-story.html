@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Danvers State Hospital Experiment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0d0d0d;
+    color: #e6e6e6;
+    padding: 20px;
+    text-align: center;
+    overflow-x: hidden;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #ff0000;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 15px rgba(255, 0, 0, 1);
+    letter-spacing: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #ff0000;
+    width: 0;
+    animation: typing 4s steps(40, end) forwards, blink 0.8s infinite;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.progress-bar {
+    height: 5px;
+    width: 0%;
+    background: #b30000;
+    transition: width 0.25s ease-in-out;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(255, 0, 0, 0.3);
+    text-align: left;
+    border-left: 5px solid #b30000;
+}
+#cont {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-in-out;
+    background: #1a1a1a;
+    padding: 15px;
+    box-shadow: 6px 6px 20px rgba(255, 0, 0, 0.7);
+    border-radius: 5px;
+}
+#author-note {
+    opacity: 1;
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 5px;
+    width: 50%;
+    margin-left:25%;
+    border-left: solid red 3px;
+}
+hr {
+    color:red;
+    width:80%;
+    height:3px;
+    margin-left:10%;
+}
+
+#bold {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    color: #ff4500;
+}
+#msg{
+border-right: solid red 3px;
+opacity: 1;
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 5px;
+width:30%;
+margin-left:35%;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #b30000;
+    margin-top: 30px;
+    border-bottom: 2px solid #b30000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #111;
+    color: #e6e6e6;
+    font-size: 0.9rem;
+    text-align: center;
+    border-top: 2px solid #b30000;
+}
+footer a {
+    color: #b30000;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 2.5rem;
+        white-space: normal;
+        text-align: center;
+        word-break: break-word;
+    }
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+    #author-note, #msg {
+        width: 70%;
+        margin: 10px auto;
+        font-size: 1rem;
+        padding: 12px;
+    }
+    #cont {
+        width: 80%;
+        margin: auto;
+        padding: 15px;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        word-wrap: break-word;
+    }
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    #author-note, #msg {
+        width: 85%;
+        font-size: 0.95rem;
+        padding: 10px;
+        text-align: center;
+    }
+    #cont {
+        width: 90%;
+        padding: 12px;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+}
+</style>
+</head>
+<body>
+<div class="progress-container">
+<div class="progress-bar" id="progress-bar"></div>
+</div>
+<h1>The Danvers States Hospital Experiment</h1>
+<br><br><hr><br><br>
+<p id = "author-note"><b>Disclaimer! </b>The following story is just a creative-artwork and is not intended to defame any existing property or people. Names and dates used are fictional and do not represent any real incident. I hope you enjoy the story. Happy Reading!!! </p>
+<br><br><hr><br><br>
+<p id = "author-note">Greetings! My name is ..., prefer not to say, but finally, I'm free and I have no external pressure to hide this account of humanity genocide. For what activity I was part of, Lord too won't forgive me. But still, out of depravity, I would like to share this account. This is from my diary which I maintained as a proof of officially killing humanity for the sake of power in WAR! This is terrible!</p>
+<br><br>
+<p id="msg">Dated: April 2, 1915 | Published: July 12, 1987</p>
+<br><br><hr><br><br>
+<p id="bold">Introduction</p>
+<br>
+<p id="cont">The Danvers State Hospital experiment, which took place from February 10, 1915, to March 29, 1915, was a psychological study aimed at testing the limits of human endurance. The experiment involved six healthy male volunteers, aged 20-25, who were subjected to various physical and psychological tests. This paper will provide a detailed account of the events that unfolded during the 48-day experiment.
+</p>
+<br>
+<p id="bold">Day 1-5 (February 10-14, 1915)</p>
+<br>
+<p id="cont">The experiment began with a series of physical and psychological evaluations. The volunteers were given a battery of tests, including intelligence quotient (IQ) tests, personality assessments, and physical fitness evaluations. They were also introduced to a daily routine that included moderate physical exercise, such as jogging and calisthenics, and a balanced diet. The volunteers were housed in a specially designed facility within the hospital, which was equipped with observation rooms, laboratories, and living quarters. The researchers, led by Dr. Henry Lee, observed the volunteers' behavior and took note of their physical and mental responses to the various tests.</p>
+<br>
+
+
+<p id="bold">Day 6-15 (February 15-24, 1915)</p>
+<br>
+<p id="cont">During this period, the volunteers were introduced to a new substance, which Dr. Lee claimed would enhance their endurance. The substance, which was administered orally, was a proprietary blend of vitamins, minerals, and other nutrients. The volunteers were given increasingly larger doses, and their behavior was monitored closely.
+
+As the days passed, the volunteers began to exhibit changes in their behavior. They became more aggressive and irritable, and their sleep patterns were disrupted. Some of the volunteers reported vivid dreams and nightmares, while others experienced difficulty concentrating and making decisions.
+</p>
+<br>
+
+
+<p id="bold">Day 16-25 (February 25-March 6, 1915)</p>
+<br>
+<p id="cont">The volunteers' behavior became more erratic, and they started to turn on each other. Fights broke out among the group, and the researchers had to intervene to prevent serious injury. Dr. Lee seemed to be fascinated by this development, and he began to increase the dosage of the substance.
+
+The volunteers were also subjected to sensory deprivation, including isolation and darkness. They were placed in a specially designed room with no windows, and their senses were deprived of any external stimuli. This was done to test their ability to cope with extreme stress and to evaluate their mental resilience.</p>
+<br>
+
+
+<p id="bold">Day 26-35 (March 7-16, 1915)</p>
+<br>
+<p id="cont">The experiment took a darker turn. The volunteers were subjected to extreme physical pain, including electric shocks and physical restraints. They were also forced to endure extreme temperatures, including heat and cold, to test their physical endurance.
+
+The volunteers' behavior became more bizarre, and they started to exhibit signs of extreme psychological distress. Some of them reported hearing voices, while others experienced vivid hallucinations. The researchers observed the volunteers' behavior closely, taking note of their physical and mental responses to the various tests.
+</p>
+<br>
+
+
+<p id="bold">Day 36-45 (March 17-26, 1915)</p>
+<br>
+<p id="cont">The volunteers' behavior became increasingly erratic, and they started to engage in self-destructive behavior. Some of them attempted to escape, while others turned to self-mutilation. The researchers had to intervene to prevent serious injury, and the experiment was temporarily halted to reassess the volunteers' condition.
+
+Dr. Lee seemed to be obsessed with the experiment, and he became increasingly aggressive and erratic. He would often yell at the volunteers, telling them that they were "not human" and that they would never be able to escape the hospital.
+</p>
+<br>
+
+
+<p id="bold">Day 46-48 (March 27-29, 1915)</p>
+<br>
+<p id="cont">The final days of the experiment were the most disturbing. The volunteers were subjected to extreme physical and psychological torture, including beatings, electric shocks, and sensory deprivation. The researchers observed the volunteers' behavior closely, taking note of their physical and mental responses to the various tests.
+
+The experiment ended abruptly on March 29, 1915, when one of the volunteers, Mike, died under mysterious circumstances. The cause of death was never determined, and the experiment was officially terminated.
+</p>
+<br>
+
+
+<p id="bold">Conclusion</p>
+<br>
+<p id="cont">The Danvers State Hospital experiment was a disturbing and inhumane study that pushed the limits of human endurance to the extreme. The experiment was poorly designed, and the researchers showed a blatant disregard for the volunteers' well-being. The results of the experiment were never published, and the incident was covered up to avoid public outcry.
+</p>
+<br><br>
+<footer>
+  <p>Nilay Kumar Shrivastava Originals | Danvers State Hospital Experiment | Storytellers<br><a href="https://github.com/NILAY-KS07">Author's Page</a> | <a href="index.html">Home</a></p>
+</footer>
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    const containers = document.querySelectorAll(".container");
+    const progressBar = document.getElementById("progress-bar");
+    const contElements = document.querySelectorAll("#cont");
+    
+       
+    function revealOnScroll() {
+        contElements.forEach(cont => {
+            const rect = cont.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                cont.style.opacity = "1";
+                cont.style.transform = "translateY(0)";
+            }
+        });
+    }
+    
+    function updateProgressBar() {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = (scrollTop / scrollHeight) * 100;
+        progressBar.style.width = progress + "%";
+    }
+    
+    window.addEventListener("scroll", () => {
+        revealOnScroll();
+        updateProgressBar();
+    });
+    
+    revealOnScroll();
+    updateProgressBar();
+});
+</script>
+</body>
+</html>
