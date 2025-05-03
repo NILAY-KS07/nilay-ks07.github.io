@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Submit Your Story | Storytellers</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Eater&display=swap" rel="stylesheet">
+<style>
+body {
+    background-color: #0d0d0d;
+    color: #e6e6e6;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Creepster', serif;
+    font-size: 4vw;
+    color: red;
+}
+
+.rules {
+    font-family: 'Nosifer', serif;
+    font-size: 1rem;
+    width: 80%;
+    margin: auto;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 6px 6px 2px white;
+    text-align: left;
+}
+
+.rules ul {
+    margin-left: 20px;
+}
+
+.checkbox-section {
+    margin: 30px 0;
+}
+
+#submit-btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-family: 'Nosifer', serif;
+    font-size: 1rem;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: not-allowed;
+    transition: 0.4s ease;
+    text-decoration: none;
+    pointer-events: none;
+    box-shadow: 2px 6px 6px 2px #888;
+    display: inline-block;
+}
+
+#submit-btn.active {
+    background-color: red;
+    cursor: pointer;
+    pointer-events: auto;
+    box-shadow: 2px 6px 6px 2px white;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #111;
+    color: #e6e6e6;
+    font-size: 1rem;
+    border-top: 2px solid #b30000;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .rules {
+        font-size: 0.85rem;
+        width: 95%;
+        padding: 15px;
+    }
+
+    #submit-btn {
+        font-size: 0.85rem;
+        padding: 10px 20px;
+    }
+
+    .checkbox-section label {
+        font-size: 0.85rem;
+    }
+
+    footer {
+        font-size: 0.75rem;
+        padding: 15px;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .rules {
+        font-size: 0.95rem;
+        width: 90%;
+    }
+
+    #submit-btn {
+        font-size: 0.9rem;
+    }
+
+    .checkbox-section label {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.85rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .rules {
+        font-size: 1rem;
+        width: 85%;
+    }
+
+    #submit-btn {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.95rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 4vw;
+    }
+
+    .rules {
+        width: 70%;
+        font-size: 1.05rem;
+    }
+
+    #submit-btn {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+</style>
+</head>
+<body>
+<h1>Submit Your Story</h1>
+
+<div class="rules">
+    <p>Before submitting, read these rules:</p>
+    <ul>
+        <li> Only original stories or real-life accounts — no plagiarism.</li>
+        <li> Keep it within the eerie, twisted, horror, or obscure genre.</li>
+        <li> No hate speech, abusive content, or anything illegal.</li>
+        <li> Submissions can be factual or fictional, but must be clearly written.</li>
+        <li> Stories should be under 2000 words (for readability).</li>
+        <li>Mention your <strong>name and relevant details</strong> (age, alias, profession, location, etc.) if you want to be featured with proper credits.</li>
+        <li>You grant us permission to publish and slightly edit the story (if needed for clarity).</li>
+    </ul>
+</div>
+
+<div class="checkbox-section">
+    <input type="checkbox" id="agree-checkbox">
+    <label for="agree-checkbox"> I adhere to the conditions and terms above.</label>
+</div>
+
+<a id="submit-btn" href="#">Submit via Email</a>
+<p style="color:white">If clicking the button doesn’t open your email app, copy this email: "<strong>storytellers.submissions@gmail.com</strong>" and paste it in your mail app then proceed. This usually happens when you don't have a default  mail app to send or recieve mails. Thankyou!</p>
+
+
+<footer>
+    <p>Nilay Kumar Shrivastava Originals | Storytellers<br>
+    <a href="https://github.com/NILAY-KS07" style="color:red">Author's Page</a></p>
+</footer>
+
+<script>
+document.getElementById('agree-checkbox').addEventListener('change', function () {
+    const btn = document.getElementById('submit-btn');
+    if (this.checked) {
+        btn.classList.add('active');
+        btn.href = "mailto:storytellers.submissions@gmail.com?subject=%3CStoryTitle%3E&body=%3CName%3E%0A%3CLocation%3E%0A%3CAny%20other%20info%20(like%20Instagram%2C%20X%2C%20etc.)%3E%0A%0A--%20%3CYour%20Story%20Starts%20Here%3E";
+    } else {
+        btn.classList.remove('active');
+        btn.href = "#";
+    }
+});
+</script>
+</body>
+</html>
