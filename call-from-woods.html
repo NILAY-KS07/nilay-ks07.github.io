@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Call From Woods</title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2022603780666162"
+     crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0d0d0d;
+    color: #e6e6e6;
+    padding: 20px;
+    text-align: center;
+    overflow-x: hidden;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #2e4d2f;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 15px rgba(46, 77, 47, 1);
+    letter-spacing: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #2e4d2f;
+    width: 0;
+    animation: typing 4s steps(40, end) forwards, blink 0.8s infinite;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.progress-bar {
+    height: 5px;
+    width: 0%;
+    background: #2e4d2f;
+    transition: width 0.25s ease-in-out;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(46, 77, 47, 0.3);
+    text-align: left;
+    border-left: 5px solid #2e4d2f;
+}
+#cont {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-in-out;
+    background: #1a1a1a;
+    padding: 15px;
+    box-shadow: 6px 6px 20px rgba(46, 77, 47, 0.7);
+    border-radius: 5px;
+}
+#author-note {
+    opacity: 1;
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 25%;
+    border-left: solid #2e4d2f 3px;
+}
+hr {
+    color: #2e4d2f;
+    width: 80%;
+    height: 3px;
+    margin-left: 10%;
+}
+
+#bold {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    color: #2e4d2f;
+}
+#msg {
+    border-right: solid #2e4d2f 3px;
+    opacity: 1;
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 5px;
+    width: 30%;
+    margin-left: 35%;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #2e4d2f;
+    margin-top: 30px;
+    border-bottom: 2px solid #2e4d2f;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #111;
+    color: #e6e6e6;
+    font-size: 0.9rem;
+    text-align: center;
+    border-top: 2px solid #2e4d2f;
+}
+footer a {
+    color: #2e4d2f;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 2.5rem;
+        white-space: normal;
+        text-align: center;
+        word-break: break-word;
+    }
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+    #author-note, #msg {
+        width: 70%;
+        margin: 10px auto;
+        font-size: 1rem;
+        padding: 12px;
+    }
+    #cont {
+        width: 80%;
+        margin: auto;
+        padding: 15px;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        word-wrap: break-word;
+    }
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    #author-note, #msg {
+        width: 85%;
+        font-size: 0.95rem;
+        padding: 10px;
+        text-align: center;
+    }
+    #cont {
+        width: 90%;
+        padding: 12px;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+}
+</style>
+</head>
+<body>
+<div class="progress-container">
+<div class="progress-bar" id="progress-bar"></div>
+</div>
+<h1>Call From Woods...</h1>
+<br><br><hr><br><br>
+<p id = "author-note"><b>Disclaimer! </b>The following story is just a creative-artwork and is not intended to defame any existing property or people. Names and dates used are fictional and do not represent any real incident. I hope you enjoy the story. Happy Reading!!! </p>
+<br><br><hr><br><br>
+
+
+<p id="cont">We recently made the leap to a new house, nestled right up against some thick, eerie woods. At first glance, it seemed spacious, bright, and just about perfect. But Trudo, our dog, wasn’t exactly on board with the move. He kept sniffing around, acting like he caught a whiff of something strange. I thought maybe he just needed a little time to adjust.
+</p>
+<br><br>
+
+<br><br>
+<p id="cont">A few nights in, while I was unpacking, I heard it—a whisper. Just my name, soft and almost teasing, like someone was playing a game with me. It sent a chill down my spine, but I tried to shake it off, blaming it on the jitters of being in a new place. Trudo, however, didn’t seem to agree—he’d stand at the doorway, ears perked up, completely frozen.</p>
+<br><br>
+
+
+
+<br><br>
+<p id="cont">By the fourth night, it happened again. This time, the whisper felt closer, almost right next to my ear. I could have sworn I felt a cold breeze brush past me. Still, I kept quiet. I didn’t want to alarm anyone. It was probably just the wind slipping through a crack or the house settling. But Trudo kept acting strange—whimpering and pawing at the door like he wanted to leave.
+
+By the seventh night, I was at my breaking point. The whisper had become almost a constant presence—barely there during the day, but louder at night. It would call my name, stretching it out like it was challenging me to follow. One night, I decided to step outside and see what was happening. As I reached the back door, the whisper shifted: “It’s too late... I’ve found someone else.
+</p>
+<br><br>
+
+
+
+<br><br>
+<p id="cont">I bolted downstairs, a mix of anger and fear coursing through me, and glanced at Trudo’s usual spot by the staircase. He was gone. His collar lay on the floor, almost as if it had been placed there on purpose. We searched high and low, calling his name, scouring the house, then the woods. Nothing. Trudo had disappeared.
+
+After that night, things only got worse. The whisper was still there, but it had changed—less human, more like a growl carried on the wind. One night, I peered out the window and saw something moving at the edge of the woods. It looked like Trudo, but something was off—his movements were all wrong, like his limbs were twisted in unnatural ways. He crept closer, dragging his paws as if they were too heavy to lift.</p>
+<br><br>
+
+
+
+<br><br>
+<p id="cont">The next morning, we found deep claw marks on the back door—urgent and desperate, as if something was trying to break in. I couldn’t shake the feeling that it wasn’t Trudo anymore; it was just a shadow of who he used to be. The whispers kept haunting me. Sometimes, I could hear a twisted version of his bark, mingling with that unsettling voice.
+
+We had to leave that house. I couldn’t bear to spend another night there. Even as we packed up, the whispers seemed more agitated, almost like they knew we were leaving. I felt watched, like something was hovering just at the edge of my vision, always there but never seen. As we drove away, I looked back one last time. I swear I saw Trudo, or whatever was left of him, standing on the porch, staring at us with eyes that didn’t belong to him.
+</p>
+<br><br>
+
+
+
+<br><br>
+<p id="cont">Now, even in our new place, miles away, I still catch whispers. Sometimes they come when I’m half asleep, just before dawn. Other times, it’s that weird, distorted bark echoing from the backyard. I keep telling myself it’s just in my head, but I know deep down that whatever we left behind hasn’t really let go. The whisper hasn’t given up. It’s still out there—waiting, watching, and slowly finding its way back to me.
+</p>
+<br><br>
+
+<br><br>
+<footer>
+  <p>Nilay Kumar Shrivastava Originals | Call From Woods | Storytellers<br><a href="https://github.com/NILAY-KS07">Author's Page</a> | <a href="index.html">Home</a></p>
+</footer>
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    const containers = document.querySelectorAll(".container");
+    const progressBar = document.getElementById("progress-bar");
+    const contElements = document.querySelectorAll("#cont");
+    
+       
+    function revealOnScroll() {
+        contElements.forEach(cont => {
+            const rect = cont.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                cont.style.opacity = "1";
+                cont.style.transform = "translateY(0)";
+            }
+        });
+    }
+    
+    function updateProgressBar() {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = (scrollTop / scrollHeight) * 100;
+        progressBar.style.width = progress + "%";
+    }
+    
+    window.addEventListener("scroll", () => {
+        revealOnScroll();
+        updateProgressBar();
+    });
+    
+    revealOnScroll();
+    updateProgressBar();
+});
+</script>
+</body>
+</html>
