@@ -1,1 +1,1 @@
-## Just an experimental static webpage deployement, with SEO adn Google Ads integration.
+## Just an experimental static webpage deployement, with SEO and Google Ads integration.
